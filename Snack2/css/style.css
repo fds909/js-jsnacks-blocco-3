@@ -1,0 +1,21 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    width: 70%;
+    margin: 30px auto;
+}
+
+ul {
+    margin: 20px 0;
+}
+
