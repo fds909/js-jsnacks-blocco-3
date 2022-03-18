@@ -9,9 +9,19 @@ const invitati = ["Pippo Franco", "James Brown", "Claudio Bisio"];
 let message = document.getElementById("message");
 
 const nome = prompt("Qual è il tuo nome?");
+let found = false;
 
-if (invitati.includes(nome)) {
-    message.innerHTML = "Il tuo nome è in lista. Puoi partecipare alla festa.";
+let i = 0;
+while ( found == false && i < invitati.length) {
+    if (invitati[i] == nome) {
+        found = true;
+    }
+
+    i++;
+}
+
+if (found == true) {
+    message.innerHTML = "Sei nella lista: puoi partecipare alla festa.";
 } else {
-    message.innerHTML = "Il tuo nome NON è in lista. NON puoi partecipare alla festa.";
+    message.innerHTML = "NON sei nella lista: NON puoi partecipare alla festa.";
 }
